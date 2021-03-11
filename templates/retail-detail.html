@@ -1,0 +1,11 @@
+{% extends '_base.html' %}
+
+{% block content %}
+
+<h2>Purchaser: {{ retail.purchaser }}</h2>
+<h2>Retail Name: {{ retail.name }}</h2>
+<p>{{ retail.description }}</p>
+<a href="{% url 'retail_update' retail.pk %}">+ Update Retail</a>
+<a href="{% url 'retail_delete' retail.pk %}">+ Delete Retail</a>
+
+{% endblock content %}
